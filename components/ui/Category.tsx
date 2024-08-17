@@ -95,7 +95,7 @@ const Link: React.FC<LinkProps> = ({ heading, imgSrc, subheading, href }) => {
             }}
             transition={{ type: "spring" }}
             src={imgSrc}
-            className="absolute z-0 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64"
+            className="absolute z-9 h-24 w-32 rounded-lg object-cover md:h-48 md:w-96"
             alt={`Image representing a link for ${heading}`}
          />
 
@@ -131,7 +131,7 @@ export const Category: React.FC = () => {
             <Link
                heading="Brand Identity"
                subheading="logo design , business card, brand elements"
-               imgSrc="/brandidentity.jpg"
+               imgSrc="/tune.jpg"
                href="/"
             />
             <Link
@@ -144,7 +144,7 @@ export const Category: React.FC = () => {
             <Link
                heading="Flyers and Marketing Elements"
                subheading="Flyers, menu mockups , Business Elements"
-               imgSrc="/mockupse.png"
+               imgSrc="/broucher.png"
                href="/"
             />
             <Link

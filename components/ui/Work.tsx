@@ -12,8 +12,8 @@ const reviews = [
       backgroundImage: "/bookcover.png",
    },
    {
-      title: "Paper Bag Mockup",
-      backgroundImage: "/Paper Bag Mockup.png",
+      title: "Poster Design",
+      backgroundImage: "/smoothie.jpg",
    },
    {
       title: "Mockup Design",
@@ -21,7 +21,7 @@ const reviews = [
    },
    {
       title: "Menu Design",
-      backgroundImage: "/Seventh.png",
+      backgroundImage: "/menu.png",
    },
    {
       title: "Visual Element Design",
