@@ -15,7 +15,6 @@ export default function Home() {
          <Category />
          <Streaming
             insta="https://www.instagram.com/flower_child_090/"
-            fb="https://www.instagram.com/flower_child_090/"
             gmail="https://www.instagram.com/flower_child_090/"
          />
          <section>
