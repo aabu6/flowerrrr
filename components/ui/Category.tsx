@@ -182,15 +182,18 @@ import React, { useRef, useState } from "react";
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
 
-interface LinkProps {
+interface CustomLinkProps {
    heading: string;
    subheading: string;
    imgSrc: string;
-   href: string;
 }
 
-const Link: React.FC<LinkProps> = ({ heading, imgSrc, subheading, href }) => {
-   const ref = useRef<HTMLAnchorElement>(null);
+const CustomLink: React.FC<CustomLinkProps> = ({
+   heading,
+   imgSrc,
+   subheading,
+}) => {
+   const ref = useRef<HTMLDivElement>(null);
    const [isHovered, setIsHovered] = useState(false);
    const x = useMotionValue(0);
    const y = useMotionValue(0);
@@ -215,17 +218,16 @@ const Link: React.FC<LinkProps> = ({ heading, imgSrc, subheading, href }) => {
       y.set(yPct);
    };
 
-   const handleMouseMove = (e: React.MouseEvent<HTMLAnchorElement>) => {
+   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
       handleMove(e.clientX, e.clientY);
    };
 
-   const handleTouchMove = (e: React.TouchEvent<HTMLAnchorElement>) => {
+   const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
       handleMove(e.touches[0].clientX, e.touches[0].clientY);
    };
 
    return (
-      <motion.a
-         href={href}
+      <motion.div
          ref={ref}
          onMouseMove={handleMouseMove}
          onTouchMove={handleTouchMove}
@@ -275,8 +277,8 @@ const Link: React.FC<LinkProps> = ({ heading, imgSrc, subheading, href }) => {
             }
             transition={{ type: "spring" }}
             src={imgSrc}
-            className="absolute z-0 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64 lg:w-96"
-            alt={`Image representing a link for ${heading}`}
+            className="absolute z-50 h-24 w-48 rounded-lg object-cover md:h-48 md:w-64 lg:w-96"
+            alt={`Image representing ${heading}`}
          />
 
          <motion.div
@@ -288,7 +290,7 @@ const Link: React.FC<LinkProps> = ({ heading, imgSrc, subheading, href }) => {
          >
             <FiArrowRight className="text-3xl text-neutral-50 md:text-5xl" />
          </motion.div>
-      </motion.a>
+      </motion.div>
    );
 };
 
@@ -301,47 +303,40 @@ export const Category: React.FC = () => {
                   What I am Good At
                </h4>
             </header>
-            <Link
+            <CustomLink
                heading="Brand Identity"
                subheading="logo design , business card, brand elements"
                imgSrc="/tune.jpg"
-               href="/"
             />
-            <Link
+            <CustomLink
                heading="Visual Elements Design"
                subheading="mockups ,marketing materials "
                imgSrc="/mockupfi.png"
-               href="/-all-time"
             />
-            <Link
+            <CustomLink
                heading="Flyers and Marketing Elements"
                subheading="Flyers, menu mockups , Business Elements"
                imgSrc="/broucher.png"
-               href="/"
             />
-            <Link
+            <CustomLink
                heading="Calligraphy"
                subheading="Flyers, menu mockups , Business Elements"
                imgSrc="/calli.jpeg"
-               href="/"
             />
-            <Link
+            <CustomLink
                heading="Graphic Designer"
                subheading="Flyers, menu mockups , Business Elements"
                imgSrc="/giftaayo.jpg"
-               href="/"
             />
-            <Link
+            <CustomLink
                heading="Thumbnail Design"
                subheading="social media , thumbnail design , socialmedia marketing"
                imgSrc="/thumbnail.png"
-               href="/"
             />
-            <Link
+            <CustomLink
                heading="Merchandise Design"
                subheading="social media , thumbnail design , socialmedia marketing"
                imgSrc="/hoodie.png"
-               href="/"
             />
          </div>
       </section>
