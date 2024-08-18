@@ -9,7 +9,7 @@ export function Hero() {
             Retro Grid
          </span> */}
          <h1 className="font-humane text-center  text-[13rem] lg:text-[17rem]  uppercase leading-[.8]">
-            HI , I'm <br /> FLOWER CHILD
+            HI , I'm <br /> FLO CHI
          </h1>
 
          <RetroGrid />

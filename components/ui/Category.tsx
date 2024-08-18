@@ -245,7 +245,7 @@ const CustomLink: React.FC<CustomLinkProps> = ({
                   staggerChildren: 0.075,
                   delayChildren: 0.25,
                }}
-               className="relative z-10 block tracking-wider text-3xl font-humane uppercase text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50 md:text-5xl lg:text-[5rem]"
+               className="relative z-10 block tracking-wider text-3xl font-humane uppercase text-neutral-300 transition-colors duration-500 group-hover:text-neutral-50 md:text-5xl lg:text-[5rem]"
             >
                {heading.split("").map((l, i) => (
                   <motion.span
@@ -337,6 +337,11 @@ export const Category: React.FC = () => {
                heading="Merchandise Design"
                subheading="social media , thumbnail design , socialmedia marketing"
                imgSrc="/hoodie.png"
+            />
+            <CustomLink
+               heading="Graffiti "
+               subheading="social media , thumbnail design , socialmedia marketing"
+               imgSrc="/grafitti.jpg"
             />
          </div>
       </section>
