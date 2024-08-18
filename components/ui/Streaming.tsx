@@ -104,7 +104,7 @@ const FlipLink: React.FC<FlipLinkProps> = ({ children, href }) => {
 
    return (
       <motion.div
-         className="font-humane relative block overflow-hidden whitespace-nowrap text-[8rem] font-black uppercase sm:text-6xl md:text-7xl lg:text-[7rem] xl:text-[10rem]"
+         className="font-humane relative block overflow-hidden whitespace-nowrap text-[8rem]  uppercase sm:text-6xl md:text-7xl lg:text-[7rem] xl:text-[10rem]"
          style={{ lineHeight: 0.75 }}
          onHoverStart={handleHoverStart}
          onHoverEnd={handleHoverEnd}
