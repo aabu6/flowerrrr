@@ -277,7 +277,7 @@ const CustomLink: React.FC<CustomLinkProps> = ({
             }
             transition={{ type: "spring" }}
             src={imgSrc}
-            className="absolute z-50 h-24 w-48 rounded-lg object-cover md:h-48 md:w-64 lg:w-96"
+            className="absolute z-50 h-24 w-48 rounded-lg object-cover md:h-64 md:w-64 lg:w-96"
             alt={`Image representing ${heading}`}
          />
 
@@ -305,42 +305,42 @@ export const Category: React.FC = () => {
             </header>
             <CustomLink
                heading="Brand Identity"
-               subheading="logo design , business card, brand elements"
-               imgSrc="/tune.jpg"
+               subheading="Logo design , Business card, Brand elements"
+               imgSrc="/ANJANEYA (3).png"
             />
             <CustomLink
                heading="Visual Elements Design"
-               subheading="mockups ,marketing materials "
+               subheading="Brand Identity, Mockups ,Marketing materials "
                imgSrc="/mockupfi.png"
             />
             <CustomLink
                heading="Flyers and Marketing Elements"
-               subheading="Flyers, menu mockups , Business Elements"
+               subheading="Flyers, Menu mockups , Poster Design"
                imgSrc="/broucher.png"
             />
             <CustomLink
                heading="Calligraphy"
-               subheading="Flyers, menu mockups , Business Elements"
+               subheading="Custom Calligraphic Lettering,Poster,sticker ,merch"
                imgSrc="/calli.jpeg"
             />
             <CustomLink
                heading="Graphic Designer"
-               subheading="Flyers, menu mockups , Business Elements"
+               subheading="Flyers, Menu Mockups , Business Elements"
                imgSrc="/giftaayo.jpg"
             />
             <CustomLink
                heading="Thumbnail Design"
-               subheading="social media , thumbnail design , socialmedia marketing"
+               subheading=" YouTube , Social Media marketing"
                imgSrc="/thumbnail.png"
             />
             <CustomLink
                heading="Merchandise Design"
-               subheading="social media , thumbnail design , socialmedia marketing"
+               subheading="Tees , Hoodie, Cap, "
                imgSrc="/hoodie.png"
             />
             <CustomLink
                heading="Graffiti "
-               subheading="social media , thumbnail design , socialmedia marketing"
+               subheading="Poster design ,Custom sticker,Merch Design"
                imgSrc="/grafitti.jpg"
             />
          </div>

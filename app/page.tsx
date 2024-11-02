@@ -15,7 +15,7 @@ export default function Home() {
          <Category />
          <Streaming
             insta="https://www.instagram.com/flower_child_090/"
-            gmail="https://www.instagram.com/flower_child_090/"
+            gmail="mailto:090flochi@gmail.com"
          />
          <section>
             <VelocityScroll
