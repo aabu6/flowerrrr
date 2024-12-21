@@ -306,7 +306,7 @@ export const Category: React.FC = () => {
             <CustomLink
                heading="Brand Identity"
                subheading="Logo design , Business card, Brand elements"
-               imgSrc="/ANJANEYA (3).png"
+               imgSrc="/brandidentity.jpg"
             />
             <CustomLink
                heading="Visual Elements Design"

@@ -8,12 +8,12 @@ const reviews = [
       backgroundImage: "/businesscard.png",
    },
    {
-      title: "Book Cover Design",
+      title: "Brand Resources",
       backgroundImage: "/bookcover.png",
    },
    {
       title: "Poster Design",
-      backgroundImage: "/smoothie.jpg",
+      backgroundImage: "/posterdesign.png",
    },
    {
       title: "Mockup Design",
