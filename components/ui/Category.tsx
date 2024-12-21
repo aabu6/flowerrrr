@@ -277,7 +277,7 @@ const CustomLink: React.FC<CustomLinkProps> = ({
             }
             transition={{ type: "spring" }}
             src={imgSrc}
-            className="absolute z-50 h-24 w-48 rounded-lg object-cover md:h-64 md:w-64 lg:w-96"
+            className="absolute z-50 h-24 w-48 rounded-lg object-cover md:h-80 md:w-64 lg:w-96"
             alt={`Image representing ${heading}`}
          />
 

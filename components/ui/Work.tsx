@@ -32,7 +32,7 @@ const reviews = [
       backgroundImage: "/giftaayo.jpg",
    },
    {
-      title: "Flyers Design",
+      title: "Album Art",
       backgroundImage: "/flyers.png",
    },
    {
