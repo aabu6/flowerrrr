@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const reviews = [
    {
-      title: "Business Card ",
+      title: "Business Cards ",
       backgroundImage: "/businesscard.png",
    },
    {
@@ -69,11 +69,11 @@ const ReviewCard = ({
                alt=""
                className="absolute inset-0 h-full w-full object-cover"
             />
-            <div className="absolute bottom-0 left-0 right-0  p-4">
+            <section className="absolute bottom-0 left-0 right-0  p-4">
                <h2 className="text-center  text-[#efefef] font-bold  font-humane uppercase text-[2rem]">
                   {title}
                </h2>
-            </div>
+            </section>
          </div>
       </figure>
    );
